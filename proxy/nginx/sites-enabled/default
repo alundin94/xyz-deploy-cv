@@ -12,7 +12,7 @@ upstream sitewatcher
 ## define default backend and backend for special remote addresses
 map $remote_addr $backend {
   default googleauth;
-  80.78.212.27 sitewatcher; #xyz.softhouse.se
+  192.168.10.1 sitewatcher; #module internal requests originate from default gw
 }
 
 server {
