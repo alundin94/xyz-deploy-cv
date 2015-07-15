@@ -3,6 +3,7 @@ server {
 
     root /opt/webapp;
     index index.html index.htm;
+    proxy_buffering off;
 
     location / {
 
