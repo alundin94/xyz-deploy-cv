@@ -17,7 +17,7 @@ katalog:
 #     - /var/katalog/tpl:/app/tpl
     restart: always
 sitewatcher:
-    image: joakimbeng/nginx-site-watcher
+    build: github.com/letterix/nginx-site-watcher.git
     expose:
      - 80
     volumes:
